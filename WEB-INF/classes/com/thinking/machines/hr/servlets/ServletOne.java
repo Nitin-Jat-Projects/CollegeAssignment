@@ -10,6 +10,7 @@ try
 {
 String firstName=request.getParameter("firstName");
 PrintWriter pw=response.getWriter();
+response.setContentType("text/plain");
 pw.println(firstName);
 }catch(Exception exception)
 {
